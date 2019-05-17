@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html >
+ <head>
+ <title>eLearn Platform</title>
+ </head>
+ 
+<meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+
+<script src = "node_modules/angular/angular.min.js"></script> 
+<link rel= "stylesheet" href = "node_modules/angular-material/angular-material.css">
+<script src = "node_modules/angular-material/angular-material.js"></script>
+<script src = "node_modules/angular-animate/angular-animate.min.js"></script>
+<script src  = "node_modules/angular-aria/angular-aria.min.js"></script>
+<script src = "node_modules/angular-messages/angular-messages.min.js"></script> 
+<script src = "node_modules/angular-resource/angular-resource.js"></script>
+ <script src = "node_modules/angular-route/angular-route.min.js"></script>
+<!-- load css files -->
+<link rel="stylesheet" href="./components/thread/videoThread.css">
+<link rel="stylesheet" href="./components/discussion/discuss.css">
+<!-- Load Contorllers -->
+<script src = "mainController.js"></script>
+<script src =  "./components/addVideo/addVideo.js"></script>
+<script src = "./components/eLearn/eLearn.js"></script>
+<script src = "./components/admin/login-register.js"></script>
+<script src = "./components/vids/ShowMeDo.js"></script>
+<script src = "./components/getUserList/getUserList.js"></script>
+<script src = "./components/thread/videoThread.js"></script>
+<script src = "components/discussion/discuss.js"></script>
+<body>
+<div ng-app = "ELearn" ng-controller="MainController">
+ 
+<div layout = "column">
+  <md-toolbar layout = "row" layout-align = "space-between center"> 
+   
+
+      
+  
+  </md-toolbar>
+  <div class="container" flex layout="row">
+      <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2">
+      
+         
+      </md-sidenav>
+         
+       <md-content flex id="content">
+                     
+                           <div  ng-view></div>
+      </md-content>
+ </div>
+
+
+
+
+
+
+
+ </body>
+</html> 

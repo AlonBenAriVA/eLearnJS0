@@ -1,0 +1,23 @@
+
+<div ng-controller = 'DiscussController'>
+
+<div id = "DiscussionTitle" ng-repeat = "cmmnt in commentsDisplayed"> Discussion thread
+  <div id ="comments" ng-repeat = "c in cmmnt.topicText">
+    {{c.commentText}} <br>
+    <p id ="timestamp">{{c.date_time}}</p>
+
+  </div>
+  
+
+</div>
+ <button ng-click = "reply()">reply</button>
+ <div ng-show = "addReply">
+   <form name = "commentsForm" method = "POST"   ng-submit = "addComment()">
+     <input type="text" ng-model = "newReply.newComment" placeholder="Your new commnent" style = "width:510px; height:100px;" maxlength = "1000" required > <br>
+     <button type = "submit" > submit</button>
+
+   </form>
+
+ </div>
+
+</div>

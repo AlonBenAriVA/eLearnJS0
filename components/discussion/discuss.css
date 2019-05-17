@@ -1,0 +1,19 @@
+#DiscussionTitle {
+  width: 80%;
+  
+  text-align:left;
+  margin:10px;
+  padding:10px;
+}
+
+#comments {
+  width: 80%;
+ 
+  text-align: center;
+  margin:10px;
+  padding:10px;
+}
+
+#timestamp {
+  font-size: 8px;
+}

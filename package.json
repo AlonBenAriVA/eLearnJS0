@@ -1,0 +1,27 @@
+{
+  "name": "elearn0",
+  "version": "1.0.0",
+  "description": "prototype an elearning platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alon Ben-Ari, MD",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.5",
+    "angular-animate": "^1.7.5",
+    "angular-aria": "^1.7.5",
+    "angular-material": "^1.1.11",
+    "angular-messages": "^1.7.5",
+    "angular-resource": "^1.7.5",
+    "angular-route": "^1.7.5",
+    "bcrypt": "^3.0.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.4.0",
+    "nodemon": "^1.18.9"
+  }
+}

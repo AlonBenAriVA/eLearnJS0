@@ -1,0 +1,35 @@
+<div>
+ Welcome to NorCal CPRS e-Learning platform, please login.
+
+  <form ng-submit = "processForm()" method="POST">
+    <input type="text" ng-model = "user.vhaNetWorkID" placeholder = "VHA network ID" required> <br>
+    <input type="password" class = "form-control" ng-model = "user.pswd" placeholder="password" required>
+    
+    
+    <button type="submit">login</button>  
+    
+  
+
+
+  </form> <br>
+  <button type="button" ng-click = "newUser()" >New User</button>
+  
+ 
+  <div ng-show = register.reg>
+    <h5>register new user</h5>
+    <h5>(All fields are required)</h5>
+  <form name = "registrationForm" ng-submit = processRegistration() method = "POST">
+    <input type="text" placeholder="first name" ng-model = "register.firstName" required> <br>
+    <input type="text" placeholder="last name" ng-model = "register.lastName" required> <br>
+    <input type="text" placeholder = "VA networkID" ng-model = "register.networkID" required> <br>
+    <input type="email" placeholder="VA email address" ng-model = "register.email" required> <br>
+    <input type="password" placeholder="enter password" ng-model = "register.password0" required> <br>
+    <input type="password" placeholder="re-enter password" ng-model = "register.password1" required> <br>
+    <input type="text" placeholder="location/station" ng-model = "register.location" required> <br>
+    <input type="text" placeholder = "VISN" ng-model = "register.visn" required> <br>
+    <input type="text" placeholder="title(MD,RN,PA etc.)" ng-model = "register.title" required> <br>
+    <button type="submit" > register me </button>
+  </form>
+  </div>
+ </div>
+</div>
